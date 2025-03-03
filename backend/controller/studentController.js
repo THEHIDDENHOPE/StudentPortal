@@ -405,7 +405,7 @@ const studentController = {
                 decoded = jwt.verify(token, process.env.SECRET_KEY);
                 console.log("🔑 Token Verified Successfully");
             } catch (err) {
-                console.error("❌ Error: Invalid or expired token");
+                console.error("❌ Error: Invalid or expired token..........");
                 return res.status(400).json({ error: "Invalid or expired token" });
             }
     
